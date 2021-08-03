@@ -29,3 +29,7 @@ iframe {
     overflow: hidden;
     display: block;
 }
+
+li {
+    display:inline;
+}
