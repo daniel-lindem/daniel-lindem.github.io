@@ -1,5 +1,5 @@
 function change_embed_url(display_id){
-    embed = "https://app.powerbi.com/reportEmbed?reportId=9fcf8be9-c7fb-46a5-9435-8f9ae4fe574d&autoAuth=true&ctid=7aa99425-1726-430d-bee1-6d96e27ae823&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLW5vcnRoLWV1cm9wZS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&pageName=";
+    embed = "https://app.powerbi.com/reportEmbed?reportId=9fcf8be9-c7fb-46a5-9435-8f9ae4fe574d&autoAuth=true&ctid=7aa99425-1726-430d-bee1-6d96e27ae823&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLW5vcnRoLWV1cm9wZS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&filterPaneEnabled=False&pageName=";
     reference = "";
     switch(display_id){
         case "oversikt":
