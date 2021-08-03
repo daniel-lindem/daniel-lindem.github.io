@@ -1,20 +1,3 @@
-var embedConfiguration = {
-    type: reportType,
-    id: reportId,
-    accessToken: accessToken,
-    embedUrl: embedUrl,
-    //pageName: pageName
-};
-var $reportContainer = $('#reportContainer');
-var report = powerbi.embed($reportContainer.get(0), embedConfiguration);
-
-var pages = [];
-
-report.getPages().then(function (reportPages) {
-    pages = reportPages;
-});
-
-pages[1].setActive();
 
 function change_embed_url(display_id){
     embed = "https://app.powerbi.com/reportEmbed?reportId=f4b8cb09-3749-47e4-ad42-9634ce337fdd&autoAuth=true&ctid=7aa99425-1726-430d-bee1-6d96e27ae823&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLW5vcnRoLWV1cm9wZS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&pageName=";
@@ -53,8 +36,3 @@ function change_embed_url(display_id){
     }
     document.getElementById("pbi-embed").src = embed + reference;
 }
-
-report.on('pageChanged', event => {
-    const page = event.details.newPage;
-    console.log(page.name);
-});
