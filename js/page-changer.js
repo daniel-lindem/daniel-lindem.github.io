@@ -1,3 +1,13 @@
+var embedConfiguration = {
+    type: reportType,
+    id: reportId,
+    accessToken: accessToken,
+    embedUrl: embedUrl,
+    //pageName: pageName
+};
+var $reportContainer = $('#reportContainer');
+var report = powerbi.embed($reportContainer.get(0), embedConfiguration);
+
 var pages = [];
 
 report.getPages().then(function (reportPages) {
