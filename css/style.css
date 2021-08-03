@@ -8,12 +8,28 @@ iframe {
     height: 100% !important;
 }
 
-.wrapper {
+.global-wrapper {
+    min-width: 320px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.main-wrapper {
     position: relative;
     margin-right: auto;
     margin-left: auto;
     max-width:1160px;
-    max-height: 1500px;
     padding-right: 10px;
     padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.global-wrapper .main-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: block;
 }
