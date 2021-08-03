@@ -32,4 +32,12 @@ iframe {
 
 li {
     display:inline;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1.2;
 }
