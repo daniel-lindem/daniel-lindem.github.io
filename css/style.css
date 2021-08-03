@@ -24,16 +24,29 @@
     display: block;
 }
 
-li {
-    display:inline;
-    position: relative;
+#navlist li {
+    display: inline-block;
+    padding-right: 0.9em;
+    padding-left: 0.9em;
+    border-right: 1px solid #222222;
 }
 
-.nav-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    line-height: 1.2;
+#navlist li.last {
+   border: none;
+}
+#navlist {
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 0.9em;
+   font-weight: normal;
+   text-align: center;
+}
+#navlist a {
+   color: #222222;
+   text-decoration: none;
+}
+#navlist a:hover {
+   color: #888888;
+   text-decoration: none;
 }
 
 .iframe-wrapper {
