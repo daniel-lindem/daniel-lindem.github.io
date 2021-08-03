@@ -36,6 +36,7 @@ function change_embed_url(display_id){
     document.getElementById("pbi-embed").src = embed + reference;
 }
 
-let pages = await report.getPages();
-
-alert(pages);
+report.on('pageChanged', event => {
+    const page = event.details.newPage;
+    console.log(page.name);
+});
