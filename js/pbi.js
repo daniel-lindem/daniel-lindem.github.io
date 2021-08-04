@@ -1,3 +1,7 @@
+let pages = await report.getPages();
+
+
+
 var embedConfiguration = {
     type: reportType,
     id: reportId,
