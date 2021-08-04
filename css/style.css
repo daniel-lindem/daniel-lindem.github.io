@@ -5,7 +5,7 @@
     min-height: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: center;
 }
 
 .main-wrapper {
@@ -22,11 +22,23 @@
     position: relative;
     overflow: hidden;
     display: block;
+    align-content: center;
 }
 
-li {
+ul {
+    padding: 2px;
+    margin: 2px;
+}
+
+li{
     display:inline;
     position: relative;
+    margin: 2px;
+}
+
+li button {
+    border: none;
+    background-color: white;
 }
 
 .nav-list {
@@ -39,8 +51,10 @@ li {
 .iframe-wrapper {
     padding-top: 151%;
     position: relative;
-    width: 100%;
+    min-width: 750px;;
     height: 0;
+    align-self: center;
+    margin: 100px auto 200px;
 }
 
 iframe {
@@ -51,4 +65,5 @@ iframe {
     right: 0;
     width: 100%;
     height: 100%;
+    
 }
