@@ -1,6 +1,11 @@
-let pages = await report.getPages();
 
-
+let pages;
+// useless async here
+async function start() {
+    // useless await here
+    pages = await report.getPages();
+    return await myfunction();
+  }
 
 var embedConfiguration = {
     type: reportType,
