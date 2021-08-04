@@ -6,3 +6,13 @@ async function start() {
     alert(pagesTest);
   }
 
+// report.on will add an event listener.
+report.on("pageChanged", function (event) {
+    let page = event.detail.newPage;
+    console.log("Event - pageChanged:\nPage changed to \"" + page.name + "\" - \"" + page.displayName + "\"");
+});
+
+// Select Run and change to a different page.
+// You should see an entry in the Log window.
+
+console.log("Select different page to see events in Log window.");
