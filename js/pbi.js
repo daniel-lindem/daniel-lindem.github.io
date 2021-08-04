@@ -3,7 +3,6 @@ let pagesTest;
 async function start() {
     // useless await here
     pagesTest = await report.getPages();
-    return await myfunction();
+    alert(pagesTest);
   }
 
-alert(pagesTest);
