@@ -7,7 +7,8 @@ async function start() {
   }
 
 // report.on will add an event listener.
-report.on("pageChanged", function (event) {
+
+await report.on("pageChanged",async function (event) {
     let page = event.detail.newPage;
     console.log("Event - pageChanged:\nPage changed to \"" + page.name + "\" - \"" + page.displayName + "\"");
 });
