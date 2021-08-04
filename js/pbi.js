@@ -1,9 +1,9 @@
 
-let pages;
+let pagesTest;
 // useless async here
 async function start() {
     // useless await here
-    pages = await report.getPages();
+    pagesTest = await report.getPages();
     return await myfunction();
   }
 
