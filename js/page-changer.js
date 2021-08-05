@@ -4,34 +4,34 @@ function change_embed_url(display_id){
     reference = "";
     switch(display_id){
         case "oversikt":
-            reference = "ReportSectionde86cd135652d9c4c011";
+            reference = "ReportSectionde86cd135652d9c4c011&navContentPaneEnabled=false";
             break;
         case "veitrafikk":
-            reference = "ReportSection967356921f6d73bd906e";
+            reference = "ReportSection967356921f6d73bd906e&navContentPaneEnabled=false";
             break;
         case "personbil":
-            reference = "ReportSectionf6bd41486b040390d996";
+            reference = "ReportSectionf6bd41486b040390d996&navContentPaneEnabled=false";
             break;
         case "varebil":
-            reference = "ReportSection322633bde7ee7e713fb9";
+            reference = "ReportSection322633bde7ee7e713fb9&navContentPaneEnabled=false";
             break;
         case "lastebil":
-            reference = "ReportSectioncca15c8c621be720680f";
+            reference = "ReportSectioncca15c8c621be720680f&navContentPaneEnabled=false";
             break;
         case "buss":
-            reference = "ReportSectiondd3ab23256fa1692f700";
+            reference = "ReportSectiondd3ab23256fa1692f700&navContentPaneEnabled=false";
             break;
         case "avfall-og-energiforsyning":
-            reference = "ReportSectionfc0c0b919ce91137ffdf";
+            reference = "ReportSectionfc0c0b919ce91137ffdf&navContentPaneEnabled=false";
             break;
         case "energibruk":
-            reference = "ReportSectionad80d3ee922b7cd6b3f6";
+            reference = "ReportSectionad80d3ee922b7cd6b3f6&navContentPaneEnabled=false";
             break;
         case "klimaendringer-i-kristiansand":
-            reference = "ReportSectionc8d93ba1be247e7bdc86";
+            reference = "ReportSectionc8d93ba1be247e7bdc86&navContentPaneEnabled=false";
             break;
         case "sykkelindeksen":
-            reference = "ReportSection8c55f2b7d850cd3c0db2";
+            reference = "ReportSection8c55f2b7d850cd3c0db2&navContentPaneEnabled=false";
             break;
     }
     document.getElementById("pbi-embed").src = embed + reference;
