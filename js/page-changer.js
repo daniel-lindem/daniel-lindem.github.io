@@ -33,6 +33,15 @@ function change_embed_url(display_id){
         case "sykkelindeksen":
             reference = "ReportSection8c55f2b7d850cd3c0db2&navContentPaneEnabled=false";
             break;
+        case "busspassasjerer":
+            reference = "ReportSection0fde31ddb759f8d07e1c&navContentPaneEnabled=false";
+            break;
+        case "husholdningsavfall":
+            reference = "ReportSectionb069bb537e86f8526c10&navContentPaneEnabled=false";
+            break;
+        case "luftkvalitet":
+            reference = "ReportSection55772d060c4449b794d6&navContentPaneEnabled=false";
+            break;
     }
     document.getElementById("pbi-embed").src = embed + reference;
 }
