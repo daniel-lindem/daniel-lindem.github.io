@@ -1,4 +1,3 @@
-
 // Read embed application token from textbox
 var txtAccessToken = $('#txtAccessToken').val();
 

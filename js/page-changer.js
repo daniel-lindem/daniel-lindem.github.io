@@ -41,7 +41,6 @@ function change_embed_url(display_id){
             break;
         case "luftkvalitet":
             reference = "ReportSection55772d060c4449b794d6&navContentPaneEnabled=false";
-            break;
     }
     document.getElementById("pbi-embed").src = embed + reference;
 }
